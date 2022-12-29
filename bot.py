@@ -1,8 +1,6 @@
 #(©) Telegram @Biawak_Store
 # t.me/Biawak_Store
 
-from aiohttp import web
-from plugins import web_server
 
 import pyromod.listen
 from pyrogram import Client
