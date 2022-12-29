@@ -1,4 +1,4 @@
-#(©)Codexbotz
+#(©) Telegram @Biawak_Store
 
 from aiohttp import web
 from plugins import web_server
@@ -34,11 +34,11 @@ name_s ="""
 """
 
 name_s = """
-        ____  ___ _    ______
-       / __ \/   | |  / /  _/
-      / / / / /| | | / // /  
-     / /_/ / ___ | |/ // /   
-    /_____/_/  |_|___/___/   
+  ___     _           ___   _____    ___    ___   ___ 
+ | _ )   /_\         / __| |_   _|  / _ \  | _ \ | __|
+ | _ \  / _ \        \__ \   | |   | (_) | |   / | _| 
+ |___/ /_/ \_\  ___  |___/   |_|    \___/  |_|_\ |___|
+               |___|                                  
 """
 
 
@@ -137,7 +137,7 @@ class Bot(Client):
             sys.exit()
 
         self.set_parse_mode(ParseMode.HTML)
-        self.LOGGER(__name__).info(f"Bot Running..!\n\nCreated by Dvajr")
+        self.LOGGER(__name__).info(f"[🔥⭐ BERHASIL DIAKTIFKAN! ⭐🔥]\n\nBOT Dibuat oleh Telegram @Biawak_Store")
         print(f"""{name_s}""")
 
     async def stop(self, *args):
