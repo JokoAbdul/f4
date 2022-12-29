@@ -1,4 +1,5 @@
-# (©) Anonymous
+# (©) Telegram @Biawak_Store
+# t.me/Biawak_Store
 
 from pyrogram.types import InlineKeyboardButton
 
@@ -15,7 +16,7 @@ class Data:
  ├ /stats - Untuk Melihat Status Bot 
  └ /broadcast - Untuk Mengirim Pesan Broadcast ke Pengguna Bot
 
-👨‍💻 Develoved by Anonymous</b>
+👨‍💻 Develoved by <a href='https://t.me/Biawak_Store'>@Biawak_Store</a></b>
 """
 
     close = [
@@ -39,9 +40,9 @@ class Data:
     ABOUT = """
 <b>Tentang Bot ini:
 
-@{} adalah Bot Telegram Untuk Menyimpan Postingan atau File Yang Dapat Diakses Melalui Link Khusus.
+@{} adalah Bot Telegram Untuk Menyimpan File Yang Dapat Diakses Melalui Link Khusus.
 
  • Creator: @{}
 
-👨‍💻 Develoved by Anonymous</b>
+👨‍💻 Develoved by <a href='https://t.me/Biawak_Store'>@Biawak_Store</a></b>
 """
