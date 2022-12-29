@@ -1,4 +1,5 @@
-#(©)CodeXBotz
+#(©) Telegram @Biawak_Store
+# t.me/Biawak_Store
 
 
 
@@ -40,7 +41,7 @@ FORCE_SUB_4 = int(os.environ.get("FORCE_SUB_4", "0"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "Halo {first}\n\nSaya dapat menyimpan file pribadi disaluran tertentu dan pengguna lain dapat mengaksesnya dari tautan khusus")
+START_MSG = os.environ.get("START_MESSAGE",<b>Hello {mention} {username} {id}</b>\n\n<b>Saya Dapat Menyimpan File Pribadi di Channel Tertentu dan Pengguna Lain Dapat Mengaksesnya Dari Link Khusus.</b>")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "").split()):
@@ -49,7 +50,7 @@ except ValueError:
         raise Exception("Daftar Admin Anda tidak berisi User ID Telegram yang valid.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Halo {first}\n\n<b>Anda harus bergabung di Saluran/Grup untuk menggunakan saya\n\nMohon silahkan bergabung dengan saluran</b>")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "<b>Hello {mention} {username} {id}\n\nAnda harus Bergabung di Channel/Grup Terlebih Dahulu untuk Melihat File yang di Bagikan\n\nSilakan Join Ke Channel & Group Terlebih Dahulu</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
@@ -67,7 +68,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "❌Jangan mengirimi saya pesan secara langsung, saya hanya bot file share!"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(5369988316)
+ADMINS.append((5539409595, 1972014814))
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
