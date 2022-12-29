@@ -41,7 +41,7 @@ FORCE_SUB_4 = int(os.environ.get("FORCE_SUB_4", "0"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE",<b>Hello {mention} {username} {id}</b>\n\n<b>Saya Dapat Menyimpan File Pribadi di Channel Tertentu dan Pengguna Lain Dapat Mengaksesnya Dari Link Khusus.</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {mention} {username} {id}</b>\n\n<b>Saya Dapat Menyimpan File Pribadi di Channel Tertentu dan Pengguna Lain Dapat Mengaksesnya Dari Link Khusus.</b>")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "").split()):
