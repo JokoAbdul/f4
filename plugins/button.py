@@ -11,15 +11,7 @@ from pyrogram.types import InlineKeyboardButton
 
 def start_button(client: Bot):
     if not FORCE_SUB_1 and not FORCE_SUB_2 and not FORCE_SUB_3 and not FORCE_SUB_4: # JIKA SEMUA ID TIDAK DIISI
-        buttons = [
-            [
-                InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help"),
-                InlineKeyboardButton(text="ᴛᴜᴛᴜᴘ", callback_data="close"),
-            ],
-        ]
-        return buttons
-    if not FORCE_SUB_2 and not FORCE_SUB_3 and not FORCE_SUB_4 and FORCE_SUB_1: 
-        buttons = [
+        buttons = [            
             [
                 InlineKeyboardButton(text=f"{client.type1} 𝟷", url=client.invitelink1),
             ],
@@ -33,40 +25,24 @@ def start_button(client: Bot):
         buttons = [
             [
                 InlineKeyboardButton(text=f"{client.type2} 𝟷", url=client.invitelink2),
-            ],
-            [
-                InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help"),
-                InlineKeyboardButton(text="ᴛᴜᴛᴜᴘ", callback_data="close"),
-            ],
+            ],            
         ]
         return buttons
     if not FORCE_SUB_1 and not FORCE_SUB_2 and not FORCE_SUB_4 and FORCE_SUB_3:
         buttons = [
             [
-                InlineKeyboardButton(text=f"{client.type3} 𝟷", url=client.invitelink3),
-            ],
-            [
-                InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help"),
-                InlineKeyboardButton(text="ᴛᴜᴛᴜᴘ", callback_data="close"),
-            ],
+                InlineKeyboardButton(text=f"{client.type3} 𝟷", url=client.invitelink3),            
         ]
         return buttons
     if not FORCE_SUB_1 and not FORCE_SUB_2 and not FORCE_SUB_3 and FORCE_SUB_4:
         buttons = [
             [
                 InlineKeyboardButton(text=f"{client.type4} 𝟷", url=client.invitelink4),
-            ],
-            [
-                InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help"),
-                InlineKeyboardButton(text="ᴛᴜᴛᴜᴘ", callback_data="close"),
-            ],
+            ],           
         ]
         return buttons
     if FORCE_SUB_1 and FORCE_SUB_2 and not FORCE_SUB_3 and not FORCE_SUB_4:
-        buttons = [
-            [
-                InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help"),
-            ],
+        buttons = [            
             [
                 InlineKeyboardButton(text=f"{client.type1} 𝟷", url=client.invitelink1),
                 InlineKeyboardButton(text=f"{client.type2} 2", url=client.invitelink2),
@@ -75,10 +51,7 @@ def start_button(client: Bot):
         ]
         return buttons
     if FORCE_SUB_1 and FORCE_SUB_3 and not FORCE_SUB_2 and not FORCE_SUB_4:
-        buttons = [
-            [
-                InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help"),
-            ],
+        buttons = [            
             [
                 InlineKeyboardButton(text=f"{client.type1} 𝟷", url=client.invitelink1),
                 InlineKeyboardButton(text=f"{client.type3} 2", url=client.invitelink3),
@@ -87,10 +60,7 @@ def start_button(client: Bot):
         ]
         return buttons
     if FORCE_SUB_1 and FORCE_SUB_4 and not FORCE_SUB_2 and not FORCE_SUB_3:
-        buttons = [
-            [
-                InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help"),
-            ],
+        buttons = [            
             [
                 InlineKeyboardButton(text=f"{client.type1} 𝟷", url=client.invitelink1),
                 InlineKeyboardButton(text=f"{client.type4} 2", url=client.invitelink4),
@@ -99,10 +69,7 @@ def start_button(client: Bot):
         ]
         return buttons
     if FORCE_SUB_2 and FORCE_SUB_3 and not FORCE_SUB_1 and not FORCE_SUB_4:
-        buttons = [
-            [
-                InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help"),
-            ],
+        buttons = [            
             [
                 InlineKeyboardButton(text=f"{client.type2} 𝟷", url=client.invitelink2),
                 InlineKeyboardButton(text=f"{client.type3} 2", url=client.invitelink3),
@@ -111,10 +78,7 @@ def start_button(client: Bot):
         ]
         return buttons
     if FORCE_SUB_2 and FORCE_SUB_4 and not FORCE_SUB_1 and not FORCE_SUB_3:
-        buttons = [
-            [
-                InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help"),
-            ],
+        buttons = [            
             [
                 InlineKeyboardButton(text=f"{client.type2} 𝟷", url=client.invitelink2),
                 InlineKeyboardButton(text=f"{client.type4} 2", url=client.invitelink4),
@@ -123,10 +87,7 @@ def start_button(client: Bot):
         ]
         return buttons
     if FORCE_SUB_3 and FORCE_SUB_4 and not FORCE_SUB_1 and not FORCE_SUB_2:
-        buttons = [
-            [
-                InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help"),
-            ],
+        buttons = [            
             [
                 InlineKeyboardButton(text=f"{client.type3} 𝟷", url=client.invitelink3),
                 InlineKeyboardButton(text=f"{client.type4} 2", url=client.invitelink4),
@@ -136,10 +97,7 @@ def start_button(client: Bot):
         return buttons
     # batas 2 tombol
     if FORCE_SUB_1 and FORCE_SUB_2 and FORCE_SUB_3 and not FORCE_SUB_4:
-        buttons = [
-            [
-                InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help"),
-            ],
+        buttons = [            
             [
                 InlineKeyboardButton(text=f"{client.type1} 𝟷", url=client.invitelink1), 
                 InlineKeyboardButton(text=f"{client.type2} 2", url=client.invitelink2),
@@ -151,10 +109,7 @@ def start_button(client: Bot):
         ]
         return buttons
     if FORCE_SUB_1 and FORCE_SUB_2 and FORCE_SUB_4 and not FORCE_SUB_3:
-        buttons = [
-            [
-                InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help"),
-            ],
+        buttons = [            
             [
                 InlineKeyboardButton(text=f"{client.type1} 𝟷", url=client.invitelink1),
                 InlineKeyboardButton(text=f"{client.type2} 2", url=client.invitelink2),
@@ -166,10 +121,7 @@ def start_button(client: Bot):
         ]
         return buttons
     if FORCE_SUB_1 and FORCE_SUB_3 and FORCE_SUB_4 and not FORCE_SUB_2:
-        buttons = [
-            [
-                InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help"),
-            ],
+        buttons = [           
             [
                 InlineKeyboardButton(text=f"{client.type1} 1", url=client.invitelink1),
                 InlineKeyboardButton(text=f"{client.type3} 2", url=client.invitelink3),
@@ -181,10 +133,7 @@ def start_button(client: Bot):
         ]
         return buttons
     if FORCE_SUB_2 and FORCE_SUB_3 and FORCE_SUB_4 and not FORCE_SUB_1:
-        buttons = [
-            [
-                InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help"),
-            ],
+        buttons = [            
             [
                 InlineKeyboardButton(text=f"{client.type2} 1", url=client.invitelink2),
                 InlineKeyboardButton(text=f"{client.type3} 2", url=client.invitelink3),
@@ -196,10 +145,7 @@ def start_button(client: Bot):
         ]
         return buttons
     if FORCE_SUB_1 and FORCE_SUB_2 and FORCE_SUB_3 and FORCE_SUB_4:
-        buttons = [
-            [
-                InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help"),
-            ],
+        buttons = [            
             [
                 InlineKeyboardButton(text=f"{client.type1} 1", url=client.invitelink1),
                 InlineKeyboardButton(text=f"{client.type2} 2", url=client.invitelink2),
