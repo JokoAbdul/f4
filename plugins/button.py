@@ -14,11 +14,7 @@ def start_button(client: Bot):
         buttons = [            
             [
                 InlineKeyboardButton(text=f"{client.type1} 𝟷", url=client.invitelink1),
-            ],
-            [
-                InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help"),
-                InlineKeyboardButton(text="ᴛᴜᴛᴜᴘ", callback_data="close"),
-            ],
+            ],            
         ]
         return buttons
     if not FORCE_SUB_1 and not FORCE_SUB_3 and not FORCE_SUB_4 and FORCE_SUB_2: 
